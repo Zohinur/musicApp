@@ -1,0 +1,115 @@
+.title {
+    background-color: green;
+    text-align: center;
+    height: 100px;
+    display: flex;
+}
+
+body {
+    background-color: yellow;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+}
+.body-container {
+    background-color: whitesmoke;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.music-app {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    position: relative;
+    height: 350px;
+    border-radius: 15px;
+}
+.music-img {
+    top: -20px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    overflow: hidden;
+}
+.music-img #songImg {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.music-app #playBtn {
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    cursor: pointer;
+  
+}
+
+.music-app #nextBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    z-index: 3;
+    height: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.music-app #prevBtn{
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    z-index: 3;
+    height: 20px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.music-app #pauseBtn {
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.music-app #progressBar {
+    position: absolute;
+    bottom: 70px;
+    width: 80%;
+    z-index: 2;
+}

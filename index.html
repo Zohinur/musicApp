@@ -3,5 +3,34 @@
     <head>
         <title>My First HTML Page</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://www.flaticon.com/free-icons/next" title="next icons">
     </head>
+
+    <body>
+        <div class="header-container">
+            <div class="title">
+                <h1>Music App</h1>
+            </div>
+        </div>
+        <div class="body-container">
+        <h1>body</h1>
+            <div class ="music-app">
+                <button id="nextBtn"><i class="fa fa-forward"></i></i></button>
+                <button id="prevBtn"><i class="fa fa-backward"></i></button>
+                <button id="playBtn"><i class="fa fa-play"></i></button>
+                <button id="pauseBtn" style="display: none;"><i class="fa fa-pause"></i></button>
+                
+                <audio id="audioPlayer" src="/audios/Afusic - Pal Pal with @Talwiinder  (Official Visualiser) Prod. @AliSoomroMusic.mp3"></audio>
+                <input type="range" id="progressBar" value="0" min="0" max="100" step="1">
+                <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+                <div class="music-img">
+                <img id="songImg" src="/images/ab67616d0000b273236d0c72c9c3cbbfa15dd208.jpeg " alt="music image">
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+        
 </html>
