@@ -23,7 +23,7 @@ const prevBtn = document.getElementById('prevBtn');
 const songImg = document.getElementById('songImg');
 const progressBar = document.getElementById('progressBar');
 const currentTime = document.getElementById('currentTime');
-const durationTime = document.getElementById('durationTime');
+const durationTime = document.getElementById('duration');
 
 
 playBtn.addEventListener('click', () => {
@@ -70,7 +70,7 @@ audioPlayer.addEventListener('ended', () => {
 audioPlayer.addEventListener('timeupdate', () => {
     progressBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
     currentTime.textContent = formatTime(audioPlayer.currentTime);
-    durationTime.textContent = formatTime(audioPlayer.duration);
+    durationTime.textContent = formatTime(audioPlayer.durationTime);
 });
 
 progressBar.addEventListener('input', () => {
