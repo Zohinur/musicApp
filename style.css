@@ -124,9 +124,24 @@ body {
     color: black;
 }
 
-.music-app #duration {
+.music-app #durationTime {
     position: absolute;
     bottom: 50px;
     right: 20px;
+    z-index: 2;
+}
+
+.music-app #title {
+    position: absolute;
+    bottom: 120px;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.music-app #artist {
+    position: absolute;
+    bottom: 90px;
+    font-size: 14px;
     z-index: 2;
 }
