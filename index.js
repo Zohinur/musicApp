@@ -75,11 +75,14 @@ audioPlayer.addEventListener('ended', () => {
     pauseBtn.style.display = 'none';
     playBtn.style.display = 'inline-block';
 });
+ audioPlayer.addEventListener('loadedmetadata', () => {
+    durationTime.textContent = formatTime(audioPlayer.duration);
+});
 
 audioPlayer.addEventListener('timeupdate', () => {
     progressBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
     currentTime.textContent = formatTime(audioPlayer.currentTime);
-    durationTime.textContent = formatTime(audioPlayer.durationTime);
+    durationTime.textContent = formatTime(audioPlayer.duration);
 });
 
 progressBar.addEventListener('input', () => {
@@ -106,3 +109,4 @@ function loadSong(index) {
     title.textContent = song.title;
     artist.textContent = song.artist;
 }
+ 
